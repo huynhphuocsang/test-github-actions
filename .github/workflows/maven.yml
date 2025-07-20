@@ -37,8 +37,14 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Build Javadoc
-      run: mvn clean javadoc:javadoc
+      run: |
+        mvn clean javadoc:javadoc
+        ls -al target/site/apidocs  # Debug: list Javadoc output
 
+    - name: Upload GitHub Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: target/site/apidocs  # 👈 Your generated static content
 
     - name: Deploy to GitHub Pages
       id: deployment
