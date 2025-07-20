@@ -1,3 +1,5 @@
+package com.luv2code.springmvc;
+
 import com.luv2code.springmvc.dao.StudentDao;
 import com.luv2code.springmvc.models.CollegeStudent;
 import com.luv2code.springmvc.service.StudentService;
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @TestPropertySource("/application.properties")
 @SpringBootTest
 class MvcTestingExampleApplicationTest {
