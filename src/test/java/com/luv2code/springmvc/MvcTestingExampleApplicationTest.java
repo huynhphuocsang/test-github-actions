@@ -65,7 +65,7 @@ class MvcTestingExampleApplicationTest {
 
 
     @Test
-    @DisplayName("Could not found student with id: 88")
+    @DisplayName("Test: could not found student with id: 88")
     public void notFoundStudentWithNewId(){
         Optional<CollegeStudent> student = studentDao.findById(88);
         assertFalse(student.isPresent(),"Student dost not exist");
