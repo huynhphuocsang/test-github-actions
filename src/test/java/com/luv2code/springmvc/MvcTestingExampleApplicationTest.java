@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @TestPropertySource("/application.properties")
 @SpringBootTest
 class MvcTestingExampleApplicationTest {

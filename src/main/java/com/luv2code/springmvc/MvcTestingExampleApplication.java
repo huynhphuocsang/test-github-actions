@@ -13,7 +13,9 @@ public class MvcTestingExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MvcTestingExampleApplication.class, args);
 	}
-
+	public void sayHello() {
+		System.out.println("Hello!");
+	}
 	@Bean
 	@Scope(value = "prototype")
 	CollegeStudent getCollegeStudent() {
