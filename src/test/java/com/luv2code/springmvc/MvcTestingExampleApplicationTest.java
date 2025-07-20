@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @TestPropertySource("/application.properties")
 @SpringBootTest
 class MvcTestingExampleApplicationTest {
@@ -78,7 +79,7 @@ class MvcTestingExampleApplicationTest {
         List<CollegeStudent> students = studentService.getAllStudent();
         List<CollegeStudent> foundStudents = studentDao.findAll();
 
-        assertEquals(5,students.size());
+        assertEquals(6,students.size());
         assertEquals(students.size(),foundStudents.size());
     }
 }
