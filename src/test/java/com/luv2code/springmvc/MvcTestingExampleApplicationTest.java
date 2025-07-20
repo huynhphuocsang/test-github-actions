@@ -78,7 +78,7 @@ class MvcTestingExampleApplicationTest {
         List<CollegeStudent> students = studentService.getAllStudent();
         List<CollegeStudent> foundStudents = studentDao.findAll();
 
-        assertEquals(5,students.size());
+        assertEquals(6,students.size());
         assertEquals(students.size(),foundStudents.size());
     }
 }
